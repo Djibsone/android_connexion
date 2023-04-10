@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">1008160490243-b7qeq3sj64ik927uhmivrhiggt4hj71k.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">1008160490243</string>
+    <string name="google_api_key" translatable="false">AIzaSyCg0skzB3Vu9jPZrnh3lRPWGeXpOxhM5mQ</string>
+    <string name="google_app_id" translatable="false">1:1008160490243:android:312081eaca7771d1b95f36</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCg0skzB3Vu9jPZrnh3lRPWGeXpOxhM5mQ</string>
+    <string name="google_storage_bucket" translatable="false">dbetude-d47ff.appspot.com</string>
+    <string name="project_id" translatable="false">dbetude-d47ff</string>
+</resources>

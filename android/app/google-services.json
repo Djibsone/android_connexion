@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1008160490243",
+    "project_id": "dbetude-d47ff",
+    "storage_bucket": "dbetude-d47ff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1008160490243:android:312081eaca7771d1b95f36",
+        "android_client_info": {
+          "package_name": "com.example.connexion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1008160490243-b7qeq3sj64ik927uhmivrhiggt4hj71k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCg0skzB3Vu9jPZrnh3lRPWGeXpOxhM5mQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1008160490243-b7qeq3sj64ik927uhmivrhiggt4hj71k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
