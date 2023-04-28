@@ -30,6 +30,8 @@ class _LoginPageState extends State<LoginPage> {
     super.dispose();
   }
 
+  bool _isVisibility = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -94,7 +96,7 @@ class _LoginPageState extends State<LoginPage> {
                     padding: const EdgeInsets.symmetric(horizontal: 25.0),
                     child: TextField(
                       controller: _passwordController,
-                      obscureText: true,
+                      obscureText: !_isVisibility,
                       decoration: InputDecoration(
                         enabledBorder: OutlineInputBorder(
                           borderSide: BorderSide(color: Colors.white),
@@ -104,8 +106,18 @@ class _LoginPageState extends State<LoginPage> {
                           borderSide: BorderSide(color: Colors.deepPurple),
                           borderRadius: BorderRadius.circular(12),
                         ),
-                        suffixIcon: Icon(Icons.visibility_off),
                         prefixIcon: Icon(Icons.lock),
+                        suffixIcon: IconButton(
+                        onPressed: () {
+                        setState(() {
+                          _isVisibility = !_isVisibility;
+                        });
+                      },
+                      icon: _isVisibility
+                          ? Icon(
+                              Icons.visibility)
+                          : Icon(Icons.visibility_off),
+                    ),
                         hintText: 'Votre mot de passe',
                         fillColor: Colors.grey[200],
                         filled: true,
