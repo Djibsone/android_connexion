@@ -1,4 +1,10 @@
-#Sun Mar 19 21:31:19 WAT 2023
+#Fri Apr 28 17:05:20 WAT 2023
+base.2=/home/djibril/StudioProjects/connexion/build/app/intermediates/dex/debug/mergeDexDebug/classes3.dex
+path.2=classes3.dex
+base.1=/home/djibril/StudioProjects/connexion/build/app/intermediates/dex/debug/mergeDexDebug/classes2.dex
+path.1=classes2.dex
 base.0=/home/djibril/StudioProjects/connexion/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
 renamed.0=classes.dex
 path.0=classes.dex

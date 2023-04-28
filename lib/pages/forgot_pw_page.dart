@@ -75,6 +75,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                   borderSide: BorderSide(color: Colors.deepPurple),
                   borderRadius: BorderRadius.circular(12),
                 ),
+                prefixIcon: Icon(Icons.email),
                 hintText: 'Votre email',
                 fillColor: Colors.grey[200],
                 filled: true,
@@ -84,11 +85,26 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
           SizedBox(height: 10),
 
           //reset button
-          MaterialButton(
+          /*MaterialButton(
               onPressed: passwordReset,
             child: Text('Reset Password'),
             color: Colors.deepPurple[200],
+            prefixIcon(Icons.R.drawable.ic_settings_backup_restore),
+          ),*/
+          MaterialButton(
+            onPressed: passwordReset,
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Icon(Icons.settings_backup_restore),
+                SizedBox(width: 8),
+                Text('Reset Password'),
+              ],
+            ),
+            color: Colors.deepPurple[200],
           ),
+
+
           SizedBox(height: 10),
         ],
       ),

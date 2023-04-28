@@ -104,6 +104,7 @@ class _LoginPageState extends State<LoginPage> {
                           borderSide: BorderSide(color: Colors.deepPurple),
                           borderRadius: BorderRadius.circular(12),
                         ),
+                        suffixIcon: Icon(Icons.visibility_off),
                         prefixIcon: Icon(Icons.lock),
                         hintText: 'Votre mot de passe',
                         fillColor: Colors.grey[200],
@@ -154,15 +155,20 @@ class _LoginPageState extends State<LoginPage> {
                           color: Colors.deepPurple,
                           borderRadius: BorderRadius.circular(12),
                         ),
-                        child: Center(
-                          child: Text(
-                            'Sign In',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 18,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(Icons.login, color: Colors.white),
+                            SizedBox(width: 10),
+                            Text(
+                              'Sign In',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18,
+                              ),
                             ),
-                          ),
+                          ],
                         ),
                       ),
                     ),

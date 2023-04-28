@@ -106,6 +106,7 @@ class _RegisterPage extends State<RegisterPage> {
                           borderSide: BorderSide(color: Colors.deepPurple),
                           borderRadius: BorderRadius.circular(12),
                         ),
+                        prefixIcon: Icon(Icons.person),
                         hintText: 'Votre nom de famille',
                         fillColor: Colors.grey[200],
                         filled: true,
@@ -128,6 +129,7 @@ class _RegisterPage extends State<RegisterPage> {
                           borderSide: BorderSide(color: Colors.deepPurple),
                           borderRadius: BorderRadius.circular(12),
                         ),
+                        prefixIcon: Icon(Icons.person),
                         hintText: 'Votre prénom',
                         fillColor: Colors.grey[200],
                         filled: true,
@@ -150,6 +152,7 @@ class _RegisterPage extends State<RegisterPage> {
                           borderSide: BorderSide(color: Colors.deepPurple),
                           borderRadius: BorderRadius.circular(12),
                         ),
+                        prefixIcon: Icon(Icons.real_estate_agent),
                         hintText: 'Votre âge',
                         fillColor: Colors.grey[200],
                         filled: true,
@@ -172,6 +175,7 @@ class _RegisterPage extends State<RegisterPage> {
                           borderSide: BorderSide(color: Colors.deepPurple),
                           borderRadius: BorderRadius.circular(12),
                         ),
+                        prefixIcon: Icon(Icons.email),
                         hintText: 'Votre email',
                         fillColor: Colors.grey[200],
                         filled: true,
@@ -195,6 +199,8 @@ class _RegisterPage extends State<RegisterPage> {
                           borderSide: BorderSide(color: Colors.deepPurple),
                           borderRadius: BorderRadius.circular(12),
                         ),
+                        prefixIcon: Icon(Icons.lock),
+                        suffixIcon: Icon(Icons.visibility_off),
                         hintText: 'Votre mot de passe',
                         fillColor: Colors.grey[200],
                         filled: true,
@@ -214,6 +220,8 @@ class _RegisterPage extends State<RegisterPage> {
                           borderSide: BorderSide(color: Colors.white),
                           borderRadius: BorderRadius.circular(12),
                         ),
+                        prefixIcon: Icon(Icons.lock),
+                        suffixIcon: Icon(Icons.visibility_off),
                         focusedBorder: OutlineInputBorder(
                           borderSide: BorderSide(color: Colors.deepPurple),
                           borderRadius: BorderRadius.circular(12),
@@ -227,7 +235,7 @@ class _RegisterPage extends State<RegisterPage> {
                   SizedBox(height: 10),
 
                   //sign up button
-                  Padding(
+                  /*Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 25.0),
                     child: GestureDetector(
                       onTap: signUp,
@@ -246,6 +254,34 @@ class _RegisterPage extends State<RegisterPage> {
                               fontSize: 18,
                             ),
                           ),
+                        ),
+                      ),
+                    ),
+                  ),*/
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 25.0),
+                    child: GestureDetector(
+                      onTap: signUp,
+                      child: Container(
+                        padding: EdgeInsets.all(20),
+                        decoration: BoxDecoration(
+                          color: Colors.deepPurple,
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Icon(Icons.person_add, color: Colors.white),
+                            SizedBox(width: 10),
+                            Text(
+                              'Sign Up',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ),
