@@ -24,13 +24,15 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 
-  void dispose() {
-    _emailController.dispose();
-    _passwordController.dispose();
-    super.dispose();
-  }
+  // void dispose() {
+  //   _emailController.dispose();
+  //   _passwordController.dispose();
+  //   super.dispose();
+  // }
 
   bool _isVisibility = false;
+  //bool _isLoading = false;
+
 
   @override
   Widget build(BuildContext context) {

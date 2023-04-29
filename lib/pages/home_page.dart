@@ -20,12 +20,23 @@ class _HomePageState extends State<HomePage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text('signed in as ' + user.email!),
-              MaterialButton(
+              //prefixIcon: Icons(Icons.singnout),
+              /*MaterialButton(
                 onPressed: () {
                   FirebaseAuth.instance.signOut();
                 },
                 color: Colors.deepPurple[200],
                 child: Text('sign out'),
+              ),*/
+              IconButton(
+                onPressed: () {
+                  FirebaseAuth.instance.signOut();
+                },
+                color: Colors.deepPurple[200],
+                //color: Colors.redAccent[200],
+                iconSize: 30,
+                icon: Icon(Icons.logout),
+                tooltip: 'Sign Out',
               ),
             ]
         ),
